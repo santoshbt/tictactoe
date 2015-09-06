@@ -7,15 +7,6 @@ class GameBoard
                7 => "_", 8 => "_", 9 => "_" }
   end
 
-  def print_row(row = nil)
-
-    return "|#{@board[1]}|#{@board[2]}|#{@board[3]}|" if row == 1
-    return "|#{@board[4]}|#{@board[5]}|#{@board[6]}|" if row == 2
-    return "|#{@board[7]}|#{@board[8]}|#{@board[9]}|" if row == 3
-  end
-
-  # Handles converting an empty space into a player's marker, if the space is taken
-  # the method will leave it unchanged and return a notification
   def place_marker(location, marker)
     if @board[location] == "_"
       @board[location] = marker
@@ -24,17 +15,20 @@ class GameBoard
     end
   end
 
-
   def check_winner(winner = nil)
     # Check rows
     (1..9).step(3) do |i|
       if @board[i] == @board[i+1] && @board[i] == @board[i+2]
-        return winner = @board[i]; end; end
+        return winner = @board[i]; end;
+      end
 
     # Check columns
     for i in 1..3
+      
       if @board[i] == @board[i+3] && @board[i] == @board[i+6]
-        return winner = @board[i]; end; end
+        return winner = @board[i]; 
+      end; 
+    end
 
     # Check top left - bottom right diag
     if @board[1] == @board[5] && @board[1] == @board[9]
@@ -46,3 +40,4 @@ class GameBoard
   end
 
 end
+

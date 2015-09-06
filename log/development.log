@@ -3502,3 +3502,2470 @@ Started GET "/play?cell=9" for ::1 at 2015-09-06 19:51:22 +0530
 Processing by PlayersController#play as */*
   Parameters: {"cell"=>"9"}
 Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:09:11 +0530
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.18) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/santoshturamari/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/santoshturamari/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/santoshturamari/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/santoshturamari/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/santoshturamari/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.2ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (176.2ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:10:10 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (79.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (55.0ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 780ms (Views: 446.4ms | ActiveRecord: 161.1ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:10:27 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:12:04 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 168ms (Views: 127.9ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:12:06 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 21:12:27 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:12:50 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 21:13:04 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:13:18 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:17:31 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 128ms (Views: 69.0ms | ActiveRecord: 35.5ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:17:34 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:17:44 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:19:02 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 129ms (Views: 71.9ms | ActiveRecord: 40.1ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:19:04 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:19:22 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:19:43 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:21:07 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:21:33 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:22:50 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 61ms (Views: 45.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:22:56 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:23:00 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:23:05 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:23:09 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:23:11 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:27:23 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 230ms (Views: 228.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-1805f7b4d848f0b9e7d3cbb36a4dda8ccdd7c703a3e9b1dee8d5b62453caec2a.js?body=1" for ::1 at 2015-09-06 21:27:24 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:27:25 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:27:26 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:27:27 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 21:27:28 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:27:29 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:27:31 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:27:59 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 132ms (Views: 130.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-c96631b6558a7f869a10fbfaf6aa4d4e9a3f0c429c4d8d11408609688a45b9ee.js?body=1" for ::1 at 2015-09-06 21:28:00 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:28:01 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 21:28:02 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:28:03 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:28:03 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:28:04 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:28:05 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 21:28:07 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 21:28:08 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:28:22 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:29:19 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 204ms (Views: 201.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/tic_tac_toe.self-b80329551f1f6aee6633adc3d2cce2a40afbe04aef5b7e176f7ca1671d1a6670.js?body=1" for ::1 at 2015-09-06 21:29:19 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:29:21 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:29:22 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:29:23 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:29:25 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:29:26 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:30:51 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 171ms (Views: 168.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-dd3504e9677ac8e9f1fffbe2dcb9e50c67bd49f8a398476a96779a38499e0b9c.js?body=1" for ::1 at 2015-09-06 21:30:51 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:30:53 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 21:30:54 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:30:55 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:30:56 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:30:57 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 21:32:31 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:32:36 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 53ms (Views: 49.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:32:38 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 21:32:39 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:32:40 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 21:32:42 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 21:32:43 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:34:00 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 139ms (Views: 136.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/tic_tac_toe.self-fdf004fb91cb05070292dfb37708ec0c1794abbcbd0a4bf0da6000de8a919ae8.js?body=1" for ::1 at 2015-09-06 21:34:01 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:34:04 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:34:05 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:34:06 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 21:34:07 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 21:34:08 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:35:29 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 91ms (Views: 53.2ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:35:35 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:35:35 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:35:37 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:35:38 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:35:39 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:36:58 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 136ms (Views: 132.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/tic_tac_toe.self-fe9fec54cbbc6a354a0ef67fcc7b632462293baeb3971bd42d632f581a3b7143.js?body=1" for ::1 at 2015-09-06 21:36:58 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:36:59 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:37:00 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:37:01 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 21:37:02 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:37:03 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:37:55 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:37:57 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:37:57 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:37:58 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 21:37:58 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:37:59 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:40:20 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (2.7ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (2.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 114ms (Views: 106.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:40:22 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:40:22 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:40:24 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 21:40:25 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:40:26 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:40:29 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:40:32 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:40:33 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 21:40:36 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:40:37 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 21:40:40 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 21:40:41 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:42:03 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:44:46 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 434ms (Views: 431.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:44:48 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 21:44:50 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:48:21 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 21:48:23 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 21:48:23 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 21:48:34 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:48:37 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 189ms (Views: 186.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-be54235e4d8f973c9e4c68277fa0cb12a4934ee59cbc1ba1d3e2e8bbc5f74130.js?body=1" for ::1 at 2015-09-06 21:48:37 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 21:48:39 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:48:40 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:48:41 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 21:48:42 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 21:48:42 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:50:18 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 133ms (Views: 129.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/tic_tac_toe.self-456d18f996874cc721a9b069abcbbf91738cbee29553556a2c94195504bfa2ef.js?body=1" for ::1 at 2015-09-06 21:50:18 +0530
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:50:20 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:50:21 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:50:21 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:50:43 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 176ms (Views: 174.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/tic_tac_toe.self-d1690505f0e3d8092247aa805730c008685459b3500f9d84eb8f56f94ae11af2.js?body=1" for ::1 at 2015-09-06 21:50:43 +0530
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:50:44 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 21:50:45 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 21:50:45 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 21:51:42 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:52:27 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 66ms (Views: 62.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 21:52:29 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 21:52:29 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 21:52:30 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 21:52:31 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:55:42 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 268ms (Views: 266.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tictactoe.self-659d69904b1856682fe697e2e474fefc5e0f08d462e4f68e6690f36aa9cdcece.css?body=1" for ::1 at 2015-09-06 21:55:42 +0530
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:58:03 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tictactoe.self-b84a0d6cffbe049ed7ea6bd21f3a30024d29023ca496fc6a754583b2b5609d3d.css?body=1" for ::1 at 2015-09-06 21:58:04 +0530
+
+
+Started GET "/players" for ::1 at 2015-09-06 21:59:36 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/players.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/scaffolds.self-0c32c2a5090ced2f54eac8eb65a8390e6d7f738538c85ba7601bb1ed13d587d5.css?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/tictactoe.self-b84a0d6cffbe049ed7ea6bd21f3a30024d29023ca496fc6a754583b2b5609d3d.css?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/jquery-1.11.3.min.self-ad66c584c2469d2bb527ba7aef5893549f1554ccc8ab3ccb43bd09ce8c3bf7a1.js?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/players.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/tic_tac_toe.self-d1690505f0e3d8092247aa805730c008685459b3500f9d84eb8f56f94ae11af2.js?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-06 21:59:36 +0530
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:01:19 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:01:41 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 60ms (Views: 57.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:05:22 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 96ms (Views: 56.3ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:05:24 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for nil:NilClass):
+  app/models/game.rb:32:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (73.2ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (64.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (179.3ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:05:25 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for nil:NilClass):
+  app/models/game.rb:32:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (55.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.8ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.5ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:05:25 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for nil:NilClass):
+  app/models/game.rb:32:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.7ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:05:25 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for nil:NilClass):
+  app/models/game.rb:32:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (119.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:05:26 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for nil:NilClass):
+  app/models/game.rb:32:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (66.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.2ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (121.1ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:05:26 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for nil:NilClass):
+  app/models/game.rb:32:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.1ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:05:27 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for nil:NilClass):
+  app/models/game.rb:32:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (52.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.4ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:06:08 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 84ms (Views: 65.2ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:06:09 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:06:10 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:06:10 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:06:11 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:06:14 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:06:16 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:06:18 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:06:19 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 22:06:19 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:06:51 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 50.8ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:06:52 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for #<View:0x007fb13a28eab8>):
+  app/models/game.rb:33:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (66.2ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (131.1ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:06:53 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for #<View:0x007fb13a28eab8>):
+  app/models/game.rb:33:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (65.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (127.1ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:06:53 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for #<View:0x007fb13a28eab8>):
+  app/models/game.rb:33:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (110.6ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:07:27 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 75ms (Views: 61.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:07:29 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `game_state' for nil:NilClass):
+  app/models/game.rb:32:in `main_loop'
+  app/controllers/players_controller.rb:16:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (63.8ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (53.1ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (120.4ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:07:45 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 75ms (Views: 58.3ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:07:46 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:07:47 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:07:48 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:07:48 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:07:50 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:08:14 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 68ms (Views: 53.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:08:16 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:08:17 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:08:18 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:08:20 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:08:20 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:09:07 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 70ms (Views: 54.8ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:09:08 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:09:09 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:09:10 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:09:10 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:09:11 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players/new" for ::1 at 2015-09-06 22:09:33 +0530
+Processing by PlayersController#new as HTML
+  Rendered players/_form.html.erb (154.4ms)
+  Rendered players/new.html.erb within layouts/application (157.3ms)
+Completed 200 OK in 270ms (Views: 269.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:16:22 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 154ms (Views: 140.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/tic_tac_toe.self-d42c667921431ce187cdd88832de1139e94def17e75b405a3cab98b907764166.js?body=1" for ::1 at 2015-09-06 22:16:22 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:16:25 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/players_controller.rb:17:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.1ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (111.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:16:26 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:16:28 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/players_controller.rb:17:in `play'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.8ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (111.8ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:17:04 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 54.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:17:05 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:17:12 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:17:56 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 188ms (Views: 184.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/tic_tac_toe.self-e388438a9795fc98e3d792622c2d0433055a2aa84b1067839164dda2a4358619.js?body=1" for ::1 at 2015-09-06 22:17:56 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:17:58 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:18:30 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 148ms (Views: 146.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-df205155c8706594dfea9a36ba1b7661118c6827c664b4978752d5037a89bf30.js?body=1" for ::1 at 2015-09-06 22:18:31 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:18:32 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:18:52 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 64ms (Views: 61.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:18:53 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:18:54 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:18:55 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:21:20 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 3.9ms)
+
+SyntaxError (/Users/santoshturamari/Applications/projects/tictactoe/app/models/game.rb:24: syntax error, unexpected ',', expecting ':'
+...yed] % 2 != 0 ? @active_player, @other_player = @player_two,...
+...                               ^
+/Users/santoshturamari/Applications/projects/tictactoe/app/models/game.rb:24: syntax error, unexpected ':', expecting keyword_end
+...er = @player_two, @player_one : @active_player, @other_playe...
+...                               ^):
+  app/models/game.rb:24: syntax error, unexpected ',', expecting ':'
+  app/models/game.rb:24: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/players_controller.rb:10:in `index'
+
+
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.1ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.9ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (115.4ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:21:51 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 66ms (Views: 51.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:21:54 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:21:55 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:21:56 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:21:58 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:22:28 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 85ms (Views: 83.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tictactoe.self-6008eb3e4adc4781fa5d1eaf8b684fde984fefa81779a8f21d32ddd32c9a4f32.css?body=1" for ::1 at 2015-09-06 22:22:28 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:22:29 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:22:51 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 114ms (Views: 110.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/tictactoe.self-80be9d32459cd63d0fff808d1c7b8ef05e4987586cfd0f7263e8cc5fb5fc3b0c.css?body=1" for ::1 at 2015-09-06 22:22:51 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:22:52 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:22:53 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:22:54 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:22:58 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:22:59 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:23:53 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 137ms (Views: 135.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-31de35d810e244f203472504757bf82d4e9a31c8708107d80e5a639699335321.js?body=1" for ::1 at 2015-09-06 22:23:53 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:23:54 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:23:55 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:23:57 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:23:58 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:24:00 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:24:01 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:24:41 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 162ms (Views: 159.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-a19ed3c1c10f3fd55eccff7574e3732690077d997b82e26005c13173aedcf375.js?body=1" for ::1 at 2015-09-06 22:24:42 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:24:43 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:24:44 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:24:46 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:24:47 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:24:48 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:25:16 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 168ms (Views: 166.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-2f110cb18fbd3cd02871f7479e4df769227466489b4e16a5ff5a3eaf0bb86e27.js?body=1" for ::1 at 2015-09-06 22:25:17 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:25:18 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:25:18 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:25:20 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:25:21 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:25:22 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:25:26 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 22:25:27 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:25:28 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:25:28 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:25:29 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:25:31 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:25:31 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:25:32 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:25:35 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:26:05 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:26:06 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:26:11 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:26:14 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:26:19 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:26:21 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:26:23 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:26:25 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 22:26:26 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:30:24 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 158ms (Views: 144.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/tic_tac_toe.self-1c36273c2ce0bbd0b6333b9fece8801081aa75d8cd6fe6f8ec16157a7db48cab.js?body=1" for ::1 at 2015-09-06 22:30:24 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:30:25 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:30:37 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:30:42 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:30:44 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:30:49 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:30:50 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:30:55 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:30:56 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:30:58 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:31:00 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:31:02 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:31:04 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:31:07 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:31:12 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 22:31:14 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:31:15 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:33:29 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (1.0ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 304ms (Views: 300.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/tic_tac_toe.self-575badf2d270e8cae9829b7a4d342d2aab1532754370445fa01d90960fb8602a.js?body=1" for ::1 at 2015-09-06 22:33:29 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:33:30 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:33:31 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:33:32 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:33:33 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:33:34 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:33:36 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:33:38 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 22:33:41 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:33:42 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:33:58 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 212ms (Views: 209.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/tic_tac_toe.self-ebb3100e05206ffb80ca0dfedd186b8de4be59db68985202b671547ed0da7184.js?body=1" for ::1 at 2015-09-06 22:33:58 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:34:02 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:34:03 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:34:05 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:34:05 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 22:34:07 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:34:10 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:34:11 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:34:13 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:34:14 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:35:00 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:35:01 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:35:58 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.6ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 169ms (Views: 164.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-0f3bd830ac61379befad5bc25654033d62630205ae94e545ba6ebe5cebfbfa15.js?body=1" for ::1 at 2015-09-06 22:35:58 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:35:59 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:36:00 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:36:01 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:36:02 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:36:03 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:36:03 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:36:41 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 139ms (Views: 137.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-adc2758e0dce9bf050288aa611bd32717cc34f2ad8cc38169b280a4209185b05.js?body=1" for ::1 at 2015-09-06 22:36:41 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:36:51 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:36:55 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:37:23 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 139ms (Views: 135.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/tic_tac_toe.self-5e87bb83e7e621a41b4622ef0a7649b825a714abad1ffee5a31453ddee4e4150.js?body=1" for ::1 at 2015-09-06 22:37:23 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:37:25 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:37:27 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:37:33 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:38:43 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 283ms (Views: 280.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/tic_tac_toe.self-99a0f51e37eee79861ff6e4196aad6e9c6079b5feff489255c599037de5d749f.js?body=1" for ::1 at 2015-09-06 22:38:44 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:38:45 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:39:02 +0530
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+  Rendered players/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 142ms (Views: 140.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/tic_tac_toe.self-2b561d5ab0ee613c95f47052f9d4e31e417c2edb6d7f5a855c055f70b119307c.js?body=1" for ::1 at 2015-09-06 22:39:03 +0530
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:39:04 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=2" for ::1 at 2015-09-06 22:39:05 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:39:07 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=6" for ::1 at 2015-09-06 22:39:08 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"6"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:39:10 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 22:39:16 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=8" for ::1 at 2015-09-06 22:39:19 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"8"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:39:20 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=3" for ::1 at 2015-09-06 22:39:21 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2015-09-06 22:41:26 +0530
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.2ms)[0m  [1mSELECT  `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (1.7ms)[0m  SELECT  `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+  Rendered players/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 70ms (Views: 64.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/play?cell=1" for ::1 at 2015-09-06 22:41:27 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"1"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=5" for ::1 at 2015-09-06 22:41:28 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"5"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=4" for ::1 at 2015-09-06 22:41:30 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=9" for ::1 at 2015-09-06 22:41:34 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"9"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/play?cell=7" for ::1 at 2015-09-06 22:41:35 +0530
+Processing by PlayersController#play as */*
+  Parameters: {"cell"=>"7"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)

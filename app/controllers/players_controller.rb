@@ -14,11 +14,7 @@ class PlayersController < ApplicationController
   def play
   
     play = @@game.main_loop(params[:cell])
-    puts play.inspect
-    # puts play[:current_pl].name
-    puts "4444444444444444444444"
-    
-    render :json => {:name => play[:current_pl].name, :marker => play[:current_pl].marker, :continue => play[:continue]}
+    render :json => {:name => play[:current_pl].name, :marker => play[:current_pl].marker, :continue => play[:continue], :other_pl => play[:other_pl].name, :error => play[:error]}
   end
   
   # GET /players/1
