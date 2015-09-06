@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$(".item").click(function(){
+		var val = $(this).attr('id').slice(4);
+		alert(1);
+		$.ajax({
+				url: "/play", 
+				type: 'GET',
+				data : {cell : val, player1 : "Jon", player2 : "Tony" },
+				success: function(result){
+					console.log(result["current_player"]);
+	    		}
+    	});
+	})
+})

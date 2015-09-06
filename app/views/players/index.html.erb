@@ -1,0 +1,100 @@
+<style>
+
+body h1 {
+  font-weight: normal;
+}
+body .turn {
+  margin-bottom: 10px;
+}
+body table {
+  border-collapse: collapse;
+  width: 150px;
+  margin: 0 auto;
+}
+body table td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+body table td:before {
+  font-size: 1.5em;
+  line-height: 1;
+}
+body table td.cross:before {
+  content: "x";
+  color: lightblue;
+}
+body table td.circle:before {
+  content: "o";
+  color: pink;
+}
+body .reset {
+  background: #555;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  color: #FFF;
+  cursor: pointer;
+  font-family: "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+}
+body .reset:hover {
+  opacity: 0.8;
+}
+
+</style>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Players</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Player1</th>
+      <th>Player2</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @players.each do |player| %>
+      <tr>
+        <td><%= player.name %></td>
+        
+        <td><%= link_to 'Show', player %></td>
+        <td><%= link_to 'Edit', edit_player_path(player) %></td>
+        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Player', new_player_path %>
+
+<div class="messages">
+ </div>
+  <div class="turn"></div>
+  <table>
+  <tr>
+      <td class="item" id="item1"></td>
+      <td class="item" id="item2"></td>
+      <td class="item" id="item3"></td>
+  </tr>
+  <tr>
+    <td class="item" id="item4"></td>
+    <td class="item" id="item5"></td>
+    <td class="item" id="item6"></td>
+  </tr>
+  <tr>
+    <td class="item" id="item7"></td>
+    <td class="item" id="item8"></td>
+    <td class="item" id="item9"></td>
+  </tr>
+</table>
+Congratulations, <span id="winner_name"></span> is the Winner..!!!
+</div>
+<br />
+<input id="reset" type="button" value="Reset" />

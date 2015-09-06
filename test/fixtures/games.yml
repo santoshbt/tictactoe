@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  score: 
+  continue_game: false
+  continue_round: 
+  player1: 
+  player2: 
+
+two:
+  score: 
+  continue_game: false
+  continue_round: 
+  player1: 
+  player2: 
