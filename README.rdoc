@@ -1,5 +1,5 @@
 Tic Tac Toe is a Ruby application allows two players to play the game on the board, on single browser.
-It simply creates two players in the database, with the name. By default first player will be assigned "X"
+User has to create two players in the beginning, with their names. By default first player will be assigned "X"
 and second player "O".
 
 It alternatively switches the players in each turn. After each game winner will be announced / will be Draw.
